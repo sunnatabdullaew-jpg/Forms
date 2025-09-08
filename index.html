@@ -1,44 +1,84 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Form</title>
-  <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Ro‘yxatdan o‘tish</h2>
-    <form action="https://echo.htmlacademy.ru/" method="post">
-      <label>Ismingiz</label>
-      <input type="text" name="user_name" placeholder="Ismingizni kiriting" required/>
+    <div class="container">
+        <div class="register-form">
+            <p class="title-text">
+                Create account
+            </p>
+            <input type="email" placeholder="E-mail" required class="email-input">
+            <input type="password" required placeholder="Password" class="password-input">
+            <div class="checkbox-container">
+                <input type="checkbox" class="checkbox">
+                <p class="checkbox-label">
+                    I have read and agree to the 
+                    <span><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms of use</a></span> and 
+                    <span><a href="https://en.wikipedia.org/wiki/Privacy_policy">Privacy policy</a></span>
+                </p>
+            </div>
+            <button class="submit-button">
+                Create account
+            </button>
+            <div class="signup-section">
+                <div class="divider-line">
 
-      <label>Email</label>
-      <input type="email" name="user_email" placeholder="Emailingiz" required/>
+                </div>
+                <p class="signup-text">
+                    or sign-up with social media
+                </p>
+                <div class="divider-line">
 
-      <label>Parol</label>
-      <input 
-        type="password" 
-        name="user_pass" 
-        placeholder="Parolingiz" 
-        required  
-      />
-
-      <label>Telefon</label>
-      <input type="tel" name="phone" placeholder="+998 93 821 42 21" required/>
-
-      <label>Jinsingiz</label>
-      <div class="radio-group">
-        <label><input type="radio" name="gender" value="male" required /> Erkak</label>
-        <label><input type="radio" name="gender" value="female" /> Ayol</label>
-      </div>
-
-      <label>Tug‘ilgan sana</label>
-      <input type="date" name="birthdate" required/>
-
-      <button type="submit">Ro‘yxatdan o‘tish</button>
-      <button type="reset" class="reset">Tozalash</button>
-    </form>
-  </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/?locale=ru_RU">
+                    <button class="facebook-button">
+                        <svg class="facebook-icon"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        fill="white">
+                        <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path>
+                        </svg>
+                        <p class="facebook-text">
+                            Facebook
+                        </p>
+                    </button>
+                </a>
+                <a href="https://x.com/?lang=ru">
+                    <button class="twitter-button">
+                        <svg class="twitter-icon"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        fill="white">
+                        <path d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z"></path>
+                        </svg>
+                        <p class="twitter-text">
+                            Twitter
+                        </p>
+                    </button>
+                </a>
+                <a href="mailto:kilua9389@gmail.com">
+                    <button class="google-button">
+                        <svg class="google-icon"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 640 640"> 
+                        <path fill="white" d="M386.3 292.5C388.1 302.2 389.4 311.9 389.4 324.5C389.4 434.3 315.8 512 205 512C98.9 512 13 426.1 13 320C13 213.9 98.9 128 205 128C256.9 128 300.1 146.9 333.6 178.3L281.5 228.3C267.4 214.7 242.5 198.7 205 198.7C139.5 198.7 86.1 252.9 86.1 320C86.1 387.1 139.5 441.3 205 441.3C281 441.3 309.5 386.6 314 358.5L205 358.5L205 292.5L386.3 292.5L386.3 292.5zM571.7 298.9L571.7 243.2L515.7 243.2L515.7 298.9L460 298.9L460 354.9L515.7 354.9L515.7 410.6L571.7 410.6L571.7 354.9L627.4 354.9L627.4 298.9L571.7 298.9z"/></svg>
+                        <p class="google-text">
+                            Google
+                        </p>
+                    </button>
+                </a>
+            </div>
+            <p class="footer-text">
+                Already have an account? <span><a href="#">Sign in</a></span>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
