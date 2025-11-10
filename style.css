@@ -1,206 +1,277 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-    color: rgb(17, 0, 255);
+  color: rgb(17, 0, 255);
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid inherit;
-    background-image: url(./images/road-wallpaper-3840x2160-vibrant-colors-scenic-view-12465.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid inherit;
+  background-image: url(./images/road-wallpaper-3840x2160-vibrant-colors-scenic-view-12465.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-.register-form {
-    width: 600px;
-    height: 550px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 10px;
-    background-color: rgba(197, 197, 197, 0.205);
+.form {
+  width: 600px;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: rgba(197, 197, 197, 0.205);
 }
 
 .title-text {
-    text-align: center;
-    font-size: 30px;
-    color: azure;
+  text-align: center;
+  font-size: 30px;
+  color: azure;
 }
 
 .email-input {
-    width: 500px;
-    height: 35px;
-    padding: 5px;
-    color: gray;
+  width: 500px;
+  height: 35px;
+  padding: 5px;
+  color: gray;
 }
 
 .email-input:focus {
-    outline: none;
+  outline: none;
 }
 
 .password-input {
-    width: 500px;
-    height: 35px;
-    padding: 5px;
-    color: gray;
+  width: 500px;
+  height: 35px;
+  padding: 5px;
+  color: gray;
 }
 
 .password-input:focus {
-    outline: none;
+  outline: none;
 }
 
 .checkbox-container {
-    width: 500px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  width: 500px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .checkbox-label {
-    font-size: 15px;
-    color: azure;
+  font-size: 15px;
+  color: azure;
 }
 
 .submit-button {
-    width: 500px;
-    height: 35px;
-    text-align: center;
-    background-color: green;
-    color: beige;
-    border: none;
-    border-radius: 5px;
+  width: 500px;
+  height: 35px;
+  text-align: center;
+  background-color: green;
+  color: beige;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 100, 0.2);
+   transition: 
+    box-shadow 0.4s ease,
+    transform 0.3s ease;
 }
 
 .submit-button:hover {
-    background-color: rgba(196, 196, 196, 0);
-    color: black;
-    border: 1px solid black;
+    transform: translateY(-3px) scale(1.05);
+  box-shadow:
+    0 0 10px rgba(0, 255, 100, 0.6),
+    0 0 20px rgba(0, 255, 100, 0.5),
+    0 0 40px rgba(0, 255, 100, 0.4),
+    inset 0 0 10px rgba(0, 255, 100, 0.3);
 }
 
 .signup-section {
-    width: 500px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 500px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .divider-line {
-    width: 120px;
-    height: 1px;
-    border: 1px solid gray;
+  width: 120px;
+  height: 1px;
+  border: 1px solid gray;
 }
 
 .signup-text {
-    color: aliceblue;
-    font-size: 15px;
+  color: aliceblue;
+  font-size: 15px;
 }
 
 .social-links {
-    width: 500px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 500px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .social-links a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .facebook-button {
-    width: 150px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
-    background-color: rgb(12, 0, 121);
-    border: none;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  background-color: rgb(12, 0, 121);
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 140, 255, 0.2);
+  transition: 
+    box-shadow 0.4s ease,
+    transform 0.3s ease;
 }
 
 .facebook-button:hover {
-    background-color: #ffffff00;
-    border: 1px solid rgb(199, 199, 199);
+ box-shadow:
+    0 0 15px rgba(0, 160, 255, 0.6),
+    0 0 35px rgba(0, 160, 255, 0.4),
+    inset 0 0 10px rgba(0, 160, 255, 0.3);
+
+  transform: translateY(-3px) scale(1.05);
 }
 
 .facebook-icon {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .facebook-text {
-    color: beige;
-    text-decoration: none;
-    font-size: 18px;
+  color: beige;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .twitter-button {
-    width: 150px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
-    background-color: rgb(0, 153, 255);
-    border: none;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  background-color: rgb(0, 153, 255);
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 140, 255, 0.2);
+  transition: 
+    box-shadow 0.4s ease,
+    transform 0.3s ease;
 }
 
 .twitter-button:hover {
-    background-color: #ffffff00;
-    border: 1px solid rgb(199, 199, 199);
+box-shadow:
+    0 0 15px rgba(0, 160, 255, 0.6),
+    0 0 35px rgba(0, 160, 255, 0.4),
+    inset 0 0 10px rgba(0, 160, 255, 0.3);
+
+  transform: translateY(-3px) scale(1.05);
 }
 
 .twitter-icon {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .twitter-text {
-    color: beige;
-    text-decoration: none;
-    font-size: 18px;
+  color: beige;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .google-button {
-    width: 150px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
-    background-color: rgb(255, 70, 70);
-    border: none;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  background-color: rgb(255, 70, 70);
+  border: none;
+  box-shadow: 0 0 10px rgba(255, 0, 60, 0.25);
+  transition: 
+    box-shadow 0.4s ease,
+    transform 0.3s ease;    
 }
 
 .google-button:hover {
-    background-color: #ffffff00;
-    border: 1px solid rgb(199, 199, 199);
+  box-shadow:
+    0 0 15px rgba(255, 30, 60, 0.7),
+    0 0 35px rgba(255, 50, 60, 0.5),
+    inset 0 0 10px rgba(255, 40, 60, 0.4);
+
+  transform: translateY(-3px) scale(1.05);
 }
 
 .google-icon {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .google-text {
-    color: beige;
-    text-decoration: none;
-    font-size: 18px;
+  color: beige;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .footer-text {
-    color: aliceblue;
+  color: aliceblue;
+}
+@media (max-width: 500px) {
+  .form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .email-input,
+  .password-input,
+  .submit-button,
+  .signup-section,
+  .social-links {
+    width: 100%;
+  }
+
+  .checkbox-container {
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .submit-button {
+    margin-top: 30px;
+  }
+  .checkbox-label {
+    font-size: 13px;
+  }
+  .container {
+    background-size: cover;
+    height: 1057px;
+  }
+  .social-links {
+    width: 400px;
+    gap: 10px;
+  }
+  .google-button,
+  .twitter-button,
+  .facebook-button {
+    width: 120px;
+}
 }
