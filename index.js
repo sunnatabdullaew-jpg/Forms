@@ -9,18 +9,13 @@ const passwordInputValue = passwordInput.value.trim();
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  console.log(passwordInput.value.trim());
+    if(!emailInput.value.trim() || !passwordInput.value.trim()){
+        return alert("Email va parol kiritilishi shart!");
+    }else {
+        alert("Siz Muvaffaqiyatli royxatdan otdingiz!");
+        window.open("https://github.com/sunnatabdullaew-jpg/Forms" , "_blank");
+    }
 
-  if (!emailInputValue) {
-    return alert("Bosh maydon qoldirilmasin!");
-  } else {
-    alert("Siz Muvaffaqiyatli royxatdan otdingiz!");
-  }
-
-  if (!passwordInputValue) {
-    return alert("Bosh maydon qoldirilmasin!");
-  }
-  else {
-    alert("Siz Muvaffaqiyatli royxatdan otdingiz!");
-  }
+    console.log(emailInput.value.trim());
+    console.log(passwordInput.value.trim());
 });
